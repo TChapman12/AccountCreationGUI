@@ -1,5 +1,4 @@
 # AccountCreationGUI
-## Coded In Python
 
 ## Requerments -
-### 3.6 and Above
+### Python 3.6 and Above
