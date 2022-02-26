@@ -48,7 +48,7 @@ def submitall():
     var2 = ""
     var3 = ""
     var4 = ""
-    f = open("GUI/AccountInfo.txt", "w")
+    f = open("YOUR_FILE_PATH_HERE/AccountInfo.txt", "w")
     var1 += entry1.get()
     var2 += entry2.get()
     var3 += entry3.get()
