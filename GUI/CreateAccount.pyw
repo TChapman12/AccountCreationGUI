@@ -1,6 +1,5 @@
 # Imports #
 
-from re import A
 import tkinter as tk
 from tkinter import *
 
