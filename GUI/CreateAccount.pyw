@@ -1,12 +1,13 @@
 # Imports #
 
+from re import A
 import tkinter as tk
 from tkinter import *
 
 # Window & Config Start #
 
 root = tk.Tk(className='Create Account')
-root.geometry("395x288")
+root.geometry("395x450")
 root.config(bg='#3c4454')
 root.resizable(False, False)
 root.title("Create Account")
@@ -37,18 +38,18 @@ label6.pack(anchor=W ,ipady=10, ipadx=10)
 
 # Entry Boxes # 
 
-entrybox1 = tk.Entry(root, width=34, bg='LightGray', textvariable=entry1)
-entrybox1.place(x=108, y=11)
-entrybox2 = tk.Entry(root, width=34, bg='LightGray', textvariable=entry2)
-entrybox2.place(x=108, y=54)
-entrybox3 = tk.Entry(root, width=34, bg='LightGray', textvariable=entry3)
-entrybox3.place(x=108, y=97)
-entrybox4 = tk.Entry(root, width=39, bg='LightGray', textvariable=entry4)
-entrybox4.place(x=68, y=140)
-entrybox5 = tk.Entry(root, width=35, bg='LightGray', textvariable=entry5)
-entrybox5.place(x=100, y=182)
-entrybox6 = tk.Entry(root, width=26, bg='LightGray', textvariable=entry6)
-entrybox6.place(x=170, y=225)
+entrybox1 = tk.Entry(root, width=40, bg='LightGray', textvariable=entry1)
+entrybox1.pack(after=label1)
+entrybox2 = tk.Entry(root, width=40, bg='LightGray', textvariable=entry2)
+entrybox2.pack(after=label2)
+entrybox3 = tk.Entry(root, width=40, bg='LightGray', textvariable=entry3)
+entrybox3.pack(after=label3)
+entrybox4 = tk.Entry(root, width=40, bg='LightGray', textvariable=entry4)
+entrybox4.pack(after=label4)
+entrybox5 = tk.Entry(root, width=40, bg='LightGray', textvariable=entry5)
+entrybox5.pack(after=label5)
+entrybox6 = tk.Entry(root, width=40, bg='LightGray', textvariable=entry6)
+entrybox6.pack(after=label6)
 
 # Definitions #
 
@@ -79,7 +80,7 @@ def submitall():
 # Buttons #
     
 submit = tk.Button(root, text="Submit", command=submitall, cursor='plus', bg='#3c4454', fg='White', activebackground='#3c4454', activeforeground='Green', bd=False)
-submit.pack(fill=X)
+submit.pack(side=BOTTOM, fill=X)
 
 # Config End #
 
